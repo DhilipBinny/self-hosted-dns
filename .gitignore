@@ -1,0 +1,31 @@
+# Temp / scratch files
+_temp/
+
+# Credentials
+.env
+*.env
+.htpasswd
+
+# SSL certificates
+ssl/
+
+# AdGuard runtime data
+adguard/work/
+
+# GeoIP databases
+geoip2/
+
+# Certbot
+certbot-webroot/
+
+# Internal logs
+CHANGES_LOG.md
+
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/

@@ -1,0 +1,22 @@
+Files that contain placeholders you need to replace before deploying:
+
+  docker-compose.yml
+  nginx-geoip/nginx.conf
+  adguard-doh.mobileconfig
+  .env.example  (copy to .env and fill in real values)
+
+Placeholders:
+
+  <xx_domain_xx>        Your DDNS domain         e.g. example.ddns.net
+  <xx_server_ip_xx>     Your server LAN IP        e.g. 192.168.1.100
+  <xx_lan_subnet_xx>    Your LAN subnet           e.g. 192.168.1.0
+  <xx_data_path_xx>     Data directory on host     e.g. /home/user/OWN_DNS
+  <xx_maxmind_account_id_xx>   MaxMind account ID
+  <xx_maxmind_license_key_xx>  MaxMind license key
+
+Quick start:
+
+  1. Find and replace all <xx_..._xx> placeholders in the files above
+  2. cp .env.example .env  — fill in your MaxMind credentials
+  3. Obtain SSL cert (see SETUP.md > SSL Certificate > Initial Setup)
+  4. Deploy stack via Portainer or: docker stack deploy -c docker-compose.yml dns-adguard

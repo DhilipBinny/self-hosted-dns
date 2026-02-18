@@ -1,0 +1,12 @@
+_temp/
+.env
+*.env
+.htpasswd
+ssl/
+adguard/work/
+geoip2/
+certbot-webroot/
+.git/
+.gitignore
+.claude/
+*.md
